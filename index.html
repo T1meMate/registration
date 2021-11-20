@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action=" "name="formname" id="formId">
+        <label><input type="text" name="first name" required>Имя*</label>
+    <br>
+    <br>
+        <label><input type="text" name="second name" required>Фамилия*</label>
+    <br>
+    <br>
+        <label><input type="text" name="patronymic" required>Отчество*</label>
+    <br>
+    <br>
+        <div>Аттестат*</div> <label><input type="radio" name="class" required>9 кл.</label>
+        <label><input type="radio" name="class" required>11 кл.</label>
+    <br>
+    <br>
+        <div>Хобби</div> <label><input type="checkbox" name="hobby">Музыка</label>
+        <label><input type="checkbox" name="hobby">Спорт</label>
+        <label><input type="checkbox" name="hobby">Видеоигры</label>
+        <label><input type="checkbox" name="hobby">Книги</label>
+        <label><input type="checkbox" name="hobby">Танцы</label>
+        <label><input type="checkbox" name="hobby">Рукоделие</label>
+        <label><input type="checkbox" name="hobby">Коллекционирование</label>
+        <label><input type="checkbox" name="hobby">Готовка</label>
+        <label><input type="checkbox" name="hobby">Настольные игры</label>
+        <label><input type="checkbox" name="hobby">Другое</label>
+    <br>
+    <br>
+        <label for="summary">Резюме*</label>
+    <br>
+        <input type="file" name="summary" required>
+    <br>
+    <br>
+    <label><input type="text" name="email" required>Почта*</label>
+    <br>
+    <br>
+        <label><input type="password" name="pw1" required>Пароль*</label>
+    <br>
+    <br>
+        <label><input type="password" name="pw2" required>Повторить пароль*</label>
+    <br>
+    <br>
+        <label for="photo">Фото</label>
+    <br>
+        <input type="file" name="photo" required>
+    <br>
+    <br>
+        <input onclick="validate()" type="submit" name="confirm" value="Отправить">
+    </form>
+
+    <script type="text/javascript" src="js.js"></script> //Я ещё хотел сделать полноценную проверку пароля, чтобы он выдавал сообщение если пароль неверен, ибо так он позволяет отправить даже если они не совпадают,
+    но я чёт тупой.
+</body>
+</html>
